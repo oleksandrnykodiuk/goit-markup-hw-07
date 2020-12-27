@@ -12,7 +12,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <title>Cтудия</title>
   </head>
 
@@ -63,11 +63,13 @@
       <section class="hero">
         <div class="box-container">
           <h1 class="title">Эффективные решения для вашего бизнеса</h1>
-          <button class="button" type="button" data-modal-open>Заказать услугу</button>
+          <button class="button" type="button" data-modal-open>
+            Заказать услугу
+          </button>
         </div>
       </section>
       <!--advantages-->
-      <section class="advantages-section">
+      <section class="advantages-section section">
         <div class="container">
           <h2 class="section-title visually-hidden">Преимущества</h2>
 
@@ -80,7 +82,8 @@
               </div>
               <h3 class="title">Внимание к деталям</h3>
               <p class="text">
-                Идейные соображения, а также начало повседневной работы по формированию позиции.
+                Идейные соображения, а также начало повседневной работы по
+                формированию позиции.
               </p>
             </li>
             <li class="item">
@@ -91,7 +94,8 @@
               </div>
               <h3 class="title">Пунктуальность</h3>
               <p class="text">
-                Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
+                Задача организации, в особенности же рамки и место обучения
+                кадров влечет за собой.
               </p>
             </li>
             <li class="item">
@@ -102,7 +106,8 @@
               </div>
               <h3 class="title">Планирование</h3>
               <p class="text">
-                Равным образом консультация с широким активом в значительной степени обуславливает.
+                Равным образом консультация с широким активом в значительной
+                степени обуславливает.
               </p>
             </li>
             <li class="item">
@@ -113,20 +118,26 @@
               </div>
               <h3 class="title">Современные технологии</h3>
               <p class="text">
-                Значимость этих проблем настолько очевидна, что реализация плановых заданий.
+                Значимость этих проблем настолько очевидна, что реализация
+                плановых заданий.
               </p>
             </li>
           </ul>
         </div>
       </section>
       <!--about-->
-      <section class="about-section">
+      <section class="about-section section">
         <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="work-list list">
             <li class="item">
               <a href="#">
-                <img src="./images/work/box1.jpg" alt="написание кода" width="370" height="294" />
+                <img
+                  src="./images/work/box1.jpg"
+                  alt="написание кода"
+                  width="370"
+                  height="294"
+                />
               </a>
               <div class="work-overlay">
                 <p>Десктопные приложения</p>
@@ -134,7 +145,12 @@
             </li>
             <li class="item">
               <a href="#">
-                <img src="./images/work/box2.jpg" alt="адаптация сайта" width="370" height="294" />
+                <img
+                  src="./images/work/box2.jpg"
+                  alt="адаптация сайта"
+                  width="370"
+                  height="294"
+                />
               </a>
               <div class="work-overlay">
                 <p>Мобильные приложения</p>
@@ -142,7 +158,12 @@
             </li>
             <li class="item">
               <a href="#">
-                <img src="./images/work/box3.jpg" alt="оформление сайта" width="370" height="294" />
+                <img
+                  src="./images/work/box3.jpg"
+                  alt="оформление сайта"
+                  width="370"
+                  height="294"
+                />
               </a>
               <div class="work-overlay">
                 <p>Дизайнерские решения</p>
@@ -152,7 +173,7 @@
         </div>
       </section>
       <!--team-->
-      <section class="team-section">
+      <section class="team-section section">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
           <ul class="team-list list">
@@ -386,7 +407,11 @@
     <footer class="page-footer">
       <div class="container footer-container">
         <div class="footer-box">
-          <a class="logo logo-footer" href="./index.html" aria-label="логотип сайта">
+          <a
+            class="logo logo-footer"
+            href="./index.html"
+            aria-label="логотип сайта"
+          >
             <span class="accent">Web</span>Studio
           </a>
           <address id="contacts">
@@ -397,7 +422,9 @@
                 >
               </li>
               <li class="item">
-                <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                <a class="link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
               </li>
               <li class="item">
                 <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
@@ -442,7 +469,12 @@
           <p class="text">Подпишитесь на рассылку</p>
           <form class="subscription-form" autocomplete="off">
             <div class="subscription-field">
-              <input class="subscription-input" name="email" id="subscription" placeholder=" " />
+              <input
+                class="subscription-input"
+                name="email"
+                id="subscription"
+                placeholder=" "
+              />
               <label class="subscription-label" for="subscription">Email</label>
             </div>
             <button class="subscription-button button" type="submit">
@@ -457,7 +489,7 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal is-open">
-        <button class="modal-button" data-modal-close>
+        <button class="close-button" data-modal-close>
           <svg class="close-icon" width="18px" height="18px">
             <use href="./images/sprite.svg#close"></use>
           </svg>
@@ -467,7 +499,12 @@
           <div class="form-field">
             <label class="user-label" for="user-name">Имя</label>
             <div class="input-field">
-              <input class="user-input" name="name" id="user-name" autocomplete="off" />
+              <input
+                class="user-input"
+                name="name"
+                id="user-name"
+                autocomplete="off"
+              />
               <svg class="form-icon" width="12px" height="12px">
                 <use href="./images/sprite.svg#name"></use>
               </svg>
