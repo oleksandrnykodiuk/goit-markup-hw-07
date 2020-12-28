@@ -7,14 +7,14 @@
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
-}
 
-.footer-box:not(:last-child) {
-  margin-right: 70px;
-}
+  .footer-box:not(:last-child) {
+    margin-right: 70px;
+  }
 
-.footer-box:nth-child(2) {
-  margin-right: 93px;
+  .footer-box:nth-child(2) {
+    margin-right: 93px;
+  }
 }
 
 .footer-box .text {
@@ -25,12 +25,12 @@
   color: #ffffff;
 }
 
-.contacts-list-footer .item:not(:last-child) {
-  margin-bottom: 9px;
-}
-
 .contacts-list-footer {
   width: 231px;
+
+  .item:not(:last-child) {
+    margin-bottom: 9px;
+  }
 }
 
 .contacts-list-footer .link {
@@ -43,13 +43,13 @@
   font-style: normal;
 
   transition: 250ms $timing-fn;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
 
 .contacts-list-footer .mail {
   color: #ffffff;
-}
-
-.contacts-list-footer .link:hover,
-.contacts-list-footer .link:focus {
-  color: $accent-color;
 }

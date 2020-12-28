@@ -21,12 +21,12 @@
   align-items: center;
 
   transition: 250ms $timing-fn;
-}
 
-.clients-link:hover,
-.clients-link:focus {
-  color: $accent-color;
-  border-color: $accent-color;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    border-color: $accent-color;
+  }
 }
 
 .clients-icon {

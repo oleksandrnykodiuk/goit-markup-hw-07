@@ -39,11 +39,16 @@
   text-decoration: none;
 
   transition: 250ms $timing-fn;
-}
 
-.site-nav .link:hover::after,
-.site-nav .link:focus::after {
-  transform: scaleX(1);
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+
+  &:hover::after,
+  &:focus::after {
+    transform: scaleX(1);
+  }
 }
 
 .site-nav .link::after {
@@ -64,17 +69,12 @@
   background-color: $accent-color;
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus {
-  color: $accent-color;
-}
-
 .site-nav .link.current {
   color: $accent-color;
-}
 
-.site-nav .link.current::after {
-  transform: scaleX(1);
+  &::after {
+    transform: scaleX(1);
+  }
 }
 
 /* Contacts */
@@ -107,21 +107,16 @@
   font-style: normal;
 
   transition: 250ms $timing-fn;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
 
 .address-icon {
   margin-right: 10px;
   fill: currentColor;
-}
-
-.mail-icon:hover,
-.mail-icon:focus {
-  fill: $accent-color;
-}
-
-.contacts-list .link:hover,
-.contacts-list .link:focus {
-  color: $accent-color;
 }
 
 // portfolio-header

@@ -14,10 +14,10 @@
   border: none;
   cursor: pointer;
   transition: 250ms $timing-fn;
-}
 
-.button:hover,
-.button:focus {
-  background-color: #ffffff;
-  color: $accent-color;
+  &:hover,
+  &:focus {
+    background-color: #ffffff;
+    color: $accent-color;
+  }
 }

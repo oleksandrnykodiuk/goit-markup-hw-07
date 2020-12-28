@@ -1,8 +1,6 @@
 .team-section {
   display: flex;
   justify-content: center;
-  padding-top: 94px;
-  padding-bottom: 94px;
   align-items: center;
   background-color: $secondary-background-color;
 }
@@ -12,16 +10,19 @@
   justify-content: space-between;
 }
 
-.team-list .photo {
-  margin-bottom: 30px;
-}
+.team-info {
+  padding-top: 30px;
+  padding-bottom: 30px;
 
-.team-list .text {
-  margin-bottom: 16px;
-}
+  .title {
+    margin-bottom: 10px;
+  }
 
-.team-list .title {
-  margin-bottom: 10px;
+  .text {
+    margin-bottom: 16px;
+    color: $secondary-text-color;
+    font-weight: 400;
+  }
 }
 
 .team-list .item {
@@ -37,9 +38,4 @@
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
-}
-
-.team-list .text {
-  color: $secondary-text-color;
-  font-weight: 400;
 }

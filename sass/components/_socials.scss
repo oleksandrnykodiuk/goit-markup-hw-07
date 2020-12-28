@@ -19,6 +19,12 @@
   color: $icon-color;
 
   transition: 250ms $timing-fn;
+
+  &:hover,
+  &:focus {
+    color: #ffffff;
+    background-color: $accent-color;
+  }
 }
 
 .socials-item:nth-child(-n + 3) {
@@ -29,12 +35,6 @@
   width: 20px;
   height: 20px;
   fill: currentColor;
-}
-
-.socials-link:hover,
-.socials-link:focus {
-  color: #ffffff;
-  background-color: $accent-color;
 }
 
 // footer

@@ -4,11 +4,11 @@
 
 .advantages-list {
   display: flex;
-}
 
-.advantages-list .item:not(:last-child) {
-  margin-right: 30px;
-  max-width: 270px;
+  & .item:not(:last-child) {
+    margin-right: 30px;
+    max-width: 270px;
+  }
 }
 
 .advantages-list .title {

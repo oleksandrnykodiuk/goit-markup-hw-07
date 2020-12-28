@@ -9,10 +9,6 @@
   color: $primary-text-color;
 }
 
-.form-field:nth-child(4) {
-  margin-bottom: 20px;
-}
-
 .user-label {
   display: block;
   margin-bottom: 4px;
@@ -25,6 +21,10 @@
 
 .form-field {
   margin-bottom: 10px;
+
+  &:nth-child(4) {
+    margin-bottom: 20px;
+  }
 }
 
 .input-field {
@@ -41,16 +41,11 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   transition: border-color 250ms $timing-fn;
-}
 
-.user-input:focus,
-.form-comment:focus {
-  outline: none;
-  border-color: $accent-color;
-}
-
-.user-input:focus + .form-icon {
-  fill: $accent-color;
+  &:focus {
+    outline: none;
+    border-color: $accent-color;
+  }
 }
 
 .form-icon {
@@ -59,6 +54,10 @@
   left: 12px;
   transform: translateY(-50%);
   transition: 250ms $timing-fn;
+
+  .user-input:focus + & {
+    fill: $accent-color;
+  }
 }
 
 .form-comment {
@@ -75,10 +74,15 @@
   resize: none;
   outline: none;
   transition: 250ms $timing-fn;
-}
 
-.form-comment::placeholder {
-  transition: color 250ms $timing-fn;
+  &:focus {
+    outline: none;
+    border-color: $accent-color;
+  }
+
+  &::placeholder {
+    transition: color 250ms $timing-fn;
+  }
 }
 
 .form-comment:focus::placeholder {
@@ -122,12 +126,12 @@
   margin-right: auto;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition: background-color 250ms $timing-fn;
-}
 
-.user-form .submit-button:hover,
-.user-form .submit-button:focus {
-  background-color: #188ce8;
-  color: #ffffff;
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+    color: #ffffff;
+  }
 }
 
 // footer-subscription

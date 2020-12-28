@@ -32,13 +32,13 @@
   cursor: pointer;
 
   transition: 250ms $timing-fn;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
 
-.modal-button:hover,
-.modal-button:focus {
-  color: $accent-color;
-}
-
-.close-icon {
+.close-button .close-icon {
   fill: currentColor;
 }
